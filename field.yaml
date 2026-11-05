@@ -1,0 +1,186 @@
+# fieldfeed pack: computational biology
+# Drafted by `fieldfeed init` on 2026-11-05. Every source except X was fetched and returned recent posts.
+# Edit freely, then run `fieldfeed check` and `fieldfeed run`.
+
+field: computational biology
+title: Computational Biology Feed
+tagline: Genomics, protein modeling, single-cell analysis and machine learning for biology, in one stream.
+description: 'Covers computational and systems biology: genomics and sequence analysis, protein structure
+  prediction and design, single-cell and spatial omics, biological foundation models, bioinformatics methods
+  and tools, and ML applied to drug discovery. On topic are new methods, benchmarks, datasets, software
+  releases and community discussion. Off topic are purely wet-lab protocols, clinical news without a computational
+  angle, and general biotech business or stock coverage.'
+interest_profile: ''
+windows:
+- 24h
+- 7d
+- 14d
+- 30d
+llm:
+  provider: anthropic
+  fast_model: claude-haiku-5-5
+  smart_model: claude-opus-5-5
+sources:
+- type: rss
+  name: bioRxiv Bioinformatics
+  url: https://connect.biorxiv.org/biorxiv_xml.php?subject=bioinformatics
+  kind: news
+- type: rss
+  name: bioRxiv Genomics
+  url: https://connect.biorxiv.org/biorxiv_xml.php?subject=genomics
+  kind: news
+- type: rss
+  name: bioRxiv Systems Biology
+  url: https://connect.biorxiv.org/biorxiv_xml.php?subject=systems_biology
+  kind: news
+- type: rss
+  name: Bioinformatics (OUP)
+  url: https://academic.oup.com/rss/site_5139/3001.xml
+  kind: news
+- type: rss
+  name: PLOS Computational Biology
+  url: https://journals.plos.org/ploscompbiol/feed/atom
+  kind: news
+- type: rss
+  name: Nature Methods
+  url: https://www.nature.com/nmeth.rss
+  kind: news
+- type: rss
+  name: Nature Biotechnology
+  url: https://www.nature.com/nbt.rss
+  kind: news
+- type: rss
+  name: Nature Computational Science
+  url: https://www.nature.com/natcomputsci.rss
+  kind: news
+- type: rss
+  name: Genome Research
+  url: https://genome.cshlp.org/rss/current.xml
+  kind: news
+- type: rss
+  name: Bioconductor Support Forum
+  url: https://support.bioconductor.org/feeds/latest/
+  kind: blog
+- type: rss
+  name: Lior Pachter's Blog
+  url: https://liorpachter.wordpress.com/feed/
+  kind: blog
+- type: rss
+  name: Oxford Protein Informatics Group Blog
+  url: https://www.blopig.com/blog/feed/
+  kind: blog
+- type: rss
+  name: Omics! Omics!
+  url: http://omicsomics.blogspot.com/feeds/posts/default
+  kind: blog
+- type: rss
+  name: Google DeepMind Blog
+  url: https://deepmind.google/blog/rss.xml
+  kind: blog
+- type: rss
+  name: Broad Institute News
+  url: https://www.broadinstitute.org/rss.xml
+  kind: blog
+- type: arxiv
+  name: arXiv
+  categories:
+  - q-bio.GN
+  - q-bio.QM
+  - q-bio.BM
+  - q-bio.MN
+  - q-bio.CB
+  - cs.LG
+  - stat.AP
+  keywords:
+  - single-cell RNA-seq
+  - protein structure prediction
+  - protein language model
+  - genomic foundation model
+  - variant effect prediction
+  - spatial transcriptomics
+  - gene regulatory network
+  - AlphaFold
+  - molecular dynamics
+  - de novo protein design
+  - sequence alignment
+  - genome assembly
+  - cell perturbation prediction
+  - drug-target interaction
+  - metagenomics
+  max_results: 500
+- type: bluesky
+  name: Bluesky
+  accounts:
+  - lpachter.bsky.social
+  - anshulkundaje.bsky.social
+  - mikelove.bsky.social
+  - ewanbirney.bsky.social
+  - biorxiv-bioinfo.bsky.social
+  - biorxivpreprint.bsky.social
+- type: x
+  name: X
+  enabled: false
+  backend: twitterapi_io
+  max_per_account: 15
+  accounts:
+  - lpachter
+  - anshulkundaje
+  - mikelove
+  - fabian_theis
+  - teichmann_lab
+  - avivregev
+  - ewanbirney
+  - jeffleek
+  - mdesmond
+  - demishassabis
+  - johnjumper
+  - pushmeet
+  - GoogleDeepMind
+  - IsomorphicLabs
+  - arcinstitute
+  - pdhsu
+  - brianhie
+  - pranam_chatterjee
+  - ProfBakerLab
+  - DavidBakerLab
+  - sokrypton
+  - MoAlQuraishi
+  - gabeguo
+  - _AlexRives
+  - EvolutionaryScale
+  - genomebiology
+  - NatureMethods
+  - NatureBiotech
+  - biorxivpreprint
+  - ENCODE_DCC
+  - ebi_outreach
+  - emblebi
+  - broadinstitute
+  - bioconductor
+  - nf_core
+  - nextflowio
+  - scverse_team
+  - biocontainers
+  - Biostars
+  - genomeweb
+- type: reddit
+  name: Reddit
+  subreddits:
+  - bioinformatics
+  - comp_chem
+  - genomics
+  - labrats
+- type: hackernews
+  name: Hacker News
+  keywords:
+  - bioinformatics
+  - computational biology
+  - AlphaFold
+  - genomics
+  - protein folding
+  - single-cell
+  - CRISPR
+  - DNA sequencing
+  - protein design
+  - bioRxiv
+  min_points: 30
